@@ -34,7 +34,7 @@ describe('User Can Edit Existing Data', () => {
       .and('contain', 'User Berhasil Diupdate');
   });
 
-  //challange
+  //challenge
   it('User can edit data user baru', () => {
     cy.get('.table td').contains('user baru').parent().find('a').contains('Edit').click();
     cy.get('#name').clear('user baru');
@@ -47,8 +47,8 @@ describe('User Can Edit Existing Data', () => {
   });
 
 
-  // //negative test case
-  // it('negative test case', () => {
-    
-  // });
+  //negative test case
+  it('User cannot edit data with blank username', () => {
+   
+  });
 })
